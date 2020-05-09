@@ -1,0 +1,7 @@
+#Task 
+#Read an integer . For all non-negative integers , print . See the sample for details.
+
+a = ""
+for i in range(n):
+  a += stre(i**2)+'\n'
+print(a)
