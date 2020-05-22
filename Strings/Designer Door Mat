@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n, m = map(int,input().split())
+#Top Line
+a =[('.|.'*(2*i+1)).center(m,'-') for i in range(n//2)]
+a = a+['WELCOME'.center(m,'-')]+a[::-1]
+a ='\n'.join(a)
+print(a)

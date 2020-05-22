@@ -1,0 +1,23 @@
+if __name__ == '__main__':
+    s = input()
+    a=[]
+    b=[]
+    c=[]
+    d=[]
+    f=[]
+    for i in s:
+        if i.isalnum() == True:
+            a.append("+")
+        if i.isalpha() == True:
+            b.append('+')
+        if i.isdigit() ==True:
+            c.append('+')
+        if i.islower() == True:
+            d.append("+")
+        if i.isupper() == True:
+            f.append('+')
+    print(bool(a))
+    print(bool(b))
+    print(bool(c))
+    print(bool(d))
+    print(bool(f))

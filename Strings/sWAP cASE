@@ -1,0 +1,5 @@
+def swap_case(s):
+    if 0<= len(s) <=10**3:
+     a = s.swapcase() 
+    return a
+

@@ -1,0 +1,12 @@
+
+
+# Complete the solve function below.
+def solve(s):
+    a = s.split(" ")
+    b = ""
+    for i in range(len(a)):
+        b +=str(a[i]).capitalize() + " "
+          
+    return b
+
+

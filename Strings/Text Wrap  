@@ -1,0 +1,15 @@
+
+
+def wrap(string, max_width):
+    k = max_width
+    a = int(len(string)/k)
+    d = len(string)%(k*a)
+    v = len(string)-d
+    for i in range(a):
+        b = string[(k*i):(k*(i+1))]
+        print(b)
+    if d>0:
+        x =string[v:]
+        return(x)
+
+
