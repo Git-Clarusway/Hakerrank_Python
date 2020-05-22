@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    ar = []
+    a = []
+    b = []
+   
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        a.append([name,score])
+    for i in range(len(a)):
+        if a[i][1] != a[i-1][1]:
+         ar.append(a[i][1])
+         ar.sort()
+    for i in range(len(a)):
+     if ar[1] == a[i][1]:
+         b.append(a[i][0])
+     elif len(b)>1:         
+         b.sort()
+    for i  in range(len(b)):
+         print(b[i])

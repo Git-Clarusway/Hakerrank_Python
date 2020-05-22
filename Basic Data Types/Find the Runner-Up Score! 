@@ -1,0 +1,9 @@
+if __name__ == '__main__':
+    n = int(raw_input())
+    arr = map(int, raw_input().split())
+    ar = []
+    for i in range(n):
+       if arr[i] != arr[i-1]:
+        ar.append(arr[i])
+    ar.sort()    
+    print(ar[-2])
