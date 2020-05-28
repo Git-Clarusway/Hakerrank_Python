@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+st=input()
+st1 = set(input().split())
+s = input()
+s1=set(input().split())
+print(len(st1|s1))
+

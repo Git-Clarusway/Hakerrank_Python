@@ -1,0 +1,24 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a=input()
+b=map(int,input().split())
+b=set(b)
+fn=int(input())
+# print(a,b)
+for i in range(fn):
+    f=input().split()
+    l=map(int,input().split())
+    l=set(l)
+    f1,f2=f
+    f2=int(f2)       
+    if f1=='intersection_update':
+        b&=l 
+    elif f1=='update':
+        b|=l
+    elif f1=='symmetric_difference_update':
+        b^=l
+    else:
+        b-=l
+print(sum(b))        
+
+
+

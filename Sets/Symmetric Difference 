@@ -1,0 +1,22 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=raw_input()
+N=raw_input()
+N=N.split()
+N=map(int,N)
+N=set(N)
+m=raw_input()
+M=raw_input()
+M=M.split()
+M=map(int,M)
+M=set(M)
+N1=N.difference(M)
+M=M.difference(N)
+j=[]
+for i in N1:
+     j.append(i)
+for i in M:
+    j.append(i)
+j.sort()
+for i in j:
+    print(i)
+

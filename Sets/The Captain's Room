@@ -1,0 +1,12 @@
+k=int(input())
+r=input().split()
+r = [int(i) for i in r ]
+r1 = set(r)
+t1 = sum(set(r))
+t1 = t1*k
+t2 =sum(r)
+finil_t = (t1-t2)//(k-1)
+print(finil_t)
+
+
+
