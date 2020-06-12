@@ -1,0 +1,26 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import cmath
+a=input()
+l=len(a)
+if l==4:
+    a1=a[0]
+    a2=a[1:3]
+    a1=float(a1)
+    a2=float(a2)
+    ab=abs(complex(a1,a2))
+    ph=cmath.phase(complex(a1,a2))
+elif l==5 :
+    a1=a[:2]
+    a2=a[2:4]
+    a1=float(a1)
+    a2=float(a2)
+    ab=abs(complex(a1,a2))
+    ph=cmath.phase(complex(a1,a2))
+else:
+    a1=a[:3]
+    a2=a[3:6]
+    a1=float(a1)
+    a2=float(a2)
+    ab=abs(complex(a1,a2))
+    ph=cmath.phase(complex(a1,a2))
+print(ab , ph ,sep='\n')
